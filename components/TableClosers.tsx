@@ -15,7 +15,7 @@ interface TableClosersProps {
 
 // Función para normalizar texto (remover acentos y convertir a minúsculas)
 const normalize = (s: string) =>
-  s.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+  s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
 export default function TableClosers({ closers, dateRange }: TableClosersProps) {
   const [openRow, setOpenRow] = useState<string | null>(null);
@@ -398,7 +398,7 @@ const getResultStatusColor = (result: string): string => {
                                 <div className="flex items-center gap-3">
                                   <div className="relative">
                                     <input
-                                      ref={(el) => searchInputRefs.current[closer.closer] = el}
+                                      ref={(el) => { searchInputRefs.current[closer.closer] = el; }}
                                       value={searchQueries[closer.closer] || ""}
                                       onChange={(e) => handleSearchChange(closer.closer, e.target.value)}
                                       placeholder="Buscar lead…"

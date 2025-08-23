@@ -43,7 +43,7 @@ export default function Dashboard() {
   };
 
   // Calculate totals for Ads (only where spend > 0)
-  const adsWithSpend = adsData.filter((ad: Ad) => ad.spend > 0);
+  const adsWithSpend = (adsData as Ad[]).filter((ad: Ad) => ad.spend > 0);
   const spendAdsTotal = sum(adsWithSpend.map((ad: Ad) => ad.spend));
   const agendasQTotal = sum(adsWithSpend.map((ad: Ad) => ad.agendasQ));
   const showsQTotal = sum(adsWithSpend.map((ad: Ad) => ad.showsQ));
@@ -51,10 +51,10 @@ export default function Dashboard() {
   const cashAdsTotal = sum(adsWithSpend.map((ad: Ad) => ad.cash));
 
   // Calculate totals from all methods (Ads + Prospección + Orgánico)
-  const salesTotalAll = sum(methodsData.map((m: Method) => m.sales || 0));
-  const cashTotalAll = sum(methodsData.map((m: Method) => m.cash || 0));
-  const billingTotal = methodsData.some(m => typeof (m as any).billing === "number")
-    ? sum(methodsData.map(m => (m as any).billing || 0))
+  const salesTotalAll = sum((methodsData as Method[]).map((m: Method) => m.sales || 0));
+  const cashTotalAll = sum((methodsData as Method[]).map((m: Method) => m.cash || 0));
+  const billingTotal = (methodsData as Method[]).some(m => typeof (m as any).billing === "number")
+    ? sum((methodsData as Method[]).map(m => (m as any).billing || 0))
     : cashTotalAll; // fallback temporal
 
   // Calculate KPIs
@@ -64,11 +64,11 @@ export default function Dashboard() {
   const roasGeneral = safeDiv(cashAdsTotal, spendAdsTotal);
 
   // Calculate sales totals
-  const totalSales = sum(closersData.map((closer: Closer) => closer.sales));
-  const totalCash = sum(closersData.map((closer: Closer) => closer.cash));
-  const totalAgendas = sum(closersData.map((closer: Closer) => closer.agendas));
-  const totalShows = sum(closersData.map((closer: Closer) => closer.shows));
-  const totalLeads = sum(closersData.map((closer: Closer) => closer.leads));
+  const totalSales = sum((closersData as Closer[]).map((closer: Closer) => closer.sales));
+  const totalCash = sum((closersData as Closer[]).map((closer: Closer) => closer.cash));
+  const totalAgendas = sum((closersData as Closer[]).map((closer: Closer) => closer.agendas));
+  const totalShows = sum((closersData as Closer[]).map((closer: Closer) => closer.shows));
+  const totalLeads = sum((closersData as Closer[]).map((closer: Closer) => closer.leads));
 
   const cierrePercentage = safeDiv(totalSales, totalAgendas);
   const showPercentage = safeDiv(totalShows, totalAgendas);
@@ -177,14 +177,14 @@ export default function Dashboard() {
         <Section title="MÉTRICAS DE ANUNCIOS / ORIGEN DE VENTAS">
           <div className="space-y-8">
             {/* Method Summary Cards */}
-            <MethodSummaryCards methods={methodsData} />
+                          <MethodSummaryCards methods={methodsData as Method[]} />
             
-            <TableAds ads={adsData} />
-            <TableMethods methods={methodsData} />
+                          <TableAds ads={adsData as Ad[]} />
+                          <TableMethods methods={methodsData as Method[]} />
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <BarCashVsSpend methods={methodsData} />
-              <ROASChart methods={methodsData} />
+                              <BarCashVsSpend methods={methodsData as Method[]} />
+                <ROASChart methods={methodsData as Method[]} />
             </div>
           </div>
         </Section>
@@ -216,7 +216,7 @@ export default function Dashboard() {
               />
             </div>
             
-            <TableClosers closers={closersData} dateRange={dateRange} />
+                          <TableClosers closers={closersData as Closer[]} dateRange={dateRange} />
           </div>
         </Section>
       </main>

@@ -22,7 +22,7 @@ export function generateMockLeadNote(lead: string, closer: string, result?: stri
   const firstName = lead.split(' ')[0] || firstNames[randomSeed % firstNames.length];
   const lastName = lead.split(' ')[1] || lastNames[randomSeed % lastNames.length];
   const source = sources[randomSeed % sources.length];
-  const campaign = campaigns[source][randomSeed % campaigns[source].length];
+  const campaign = campaigns[source as keyof typeof campaigns]?.[randomSeed % campaigns[source as keyof typeof campaigns]?.length || 0] || 'Campaña General';
   
   // Generate email
   const email = `${firstName.toLowerCase()}.${lastName.toLowerCase()}@${domains[randomSeed % domains.length]}`;

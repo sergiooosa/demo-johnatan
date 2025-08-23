@@ -50,7 +50,7 @@ export function generateCallAnalysis(
       break;
       
     case 'Oferta enviada':
-      objetivo = getRandomElement(['Demo', 'Seguimiento']);
+      objetivo = getRandomElement(['Demo', 'Seguimiento']) as "Demo" | "Seguimiento";
       objecciones = [getRandomElement(['precio', 'tiempo', 'confianza', 'presupuesto'])];
       sentimiento = Math.random() > 0.3 ? 'Neutro' : 'Positivo';
       resumen = `${firstName} mostró interés pero necesita evaluar. Envié propuesta personalizada.`;
@@ -64,7 +64,7 @@ export function generateCallAnalysis(
       break;
       
     case 'Perdida':
-      objetivo = getRandomElement(['Descubrimiento', 'Cierre']);
+      objetivo = getRandomElement(['Descubrimiento', 'Cierre']) as "Descubrimiento" | "Cierre";
       objecciones = [getRandomElement(['precio', 'presupuesto', 'timing', 'necesidad'])];
       sentimiento = 'Negativo';
       resumen = `${firstName} no ve valor suficiente o no tiene presupuesto. No es el momento adecuado.`;
@@ -77,7 +77,7 @@ export function generateCallAnalysis(
       break;
       
     case 'Seguimiento':
-      objetivo = getRandomElement(['Descubrimiento', 'Demo']);
+      objetivo = getRandomElement(['Descubrimiento', 'Demo']) as "Descubrimiento" | "Demo";
       objecciones = [getRandomElement(['tiempo', 'información'])];
       sentimiento = 'Neutro';
       resumen = `Primera llamada con ${firstName}. Identifiqué interés, pero necesita más información.`;
