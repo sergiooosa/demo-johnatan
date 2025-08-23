@@ -1,0 +1,12 @@
+[
+  { "id":"c1", "closer":"Juan Díaz", "ts":"2024-12-21T14:35:00-05:00", "lead":"María G.", "phone":"+57•••1234", "durationSec": 480, "outcome":"Conectada", "result":"Agendada", "notes":"Cita martes 10am", "amount": 0 },
+  { "id":"c2", "closer":"Juan Díaz", "ts":"2024-12-21T11:05:00-05:00", "lead":"Pedro C.", "phone":"+57•••7788", "durationSec": 130, "outcome":"No contesta", "result":"—", "notes":"Dejar WhatsApp", "amount": 0 },
+  { "id":"c3", "closer":"Ana Pérez", "ts":"2024-12-20T16:15:00-05:00", "lead":"Laura V.", "phone":"+57•••9911", "durationSec": 620, "outcome":"Conectada", "result":"Venta", "notes":"Plan anual", "amount": 1200 },
+  { "id":"c4", "closer":"Juan Díaz", "ts":"2024-12-21T09:30:00-05:00", "lead":"Carlos R.", "phone":"+57•••5566", "durationSec": 340, "outcome":"Conectada", "result":"Venta", "notes":"Plan básico", "amount": 450 },
+  { "id":"c5", "closer":"Ana Pérez", "ts":"2024-12-21T13:45:00-05:00", "lead":"Sofia M.", "phone":"+57•••3344", "durationSec": 85, "outcome":"Buzón", "result":"—", "notes":"Llamar más tarde", "amount": 0 },
+  { "id":"c6", "closer":"Luis R.", "ts":"2024-12-19T10:20:00-05:00", "lead":"Diego F.", "phone":"+57•••2255", "durationSec": 290, "outcome":"Conectada", "result":"Seguimiento", "notes":"Revisar presupuesto", "amount": 0 },
+  { "id":"c7", "closer":"Juan Díaz", "ts":"2024-12-20T15:10:00-05:00", "lead":"Andrea L.", "phone":"+57•••8899", "durationSec": 720, "outcome":"Conectada", "result":"Venta", "notes":"Plan premium", "amount": 850 },
+  { "id":"c8", "closer":"Ana Pérez", "ts":"2024-12-21T08:15:00-05:00", "lead":"Roberto T.", "phone":"+57•••6677", "durationSec": 45, "outcome":"Rechazada", "result":"—", "notes":"No interesado", "amount": 0 },
+  { "id":"c9", "closer":"Luis R.", "ts":"2024-12-21T17:30:00-05:00", "lead":"Valentina K.", "phone":"+57•••4433", "durationSec": 520, "outcome":"Conectada", "result":"Agendada", "notes":"Demo viernes 2pm", "amount": 0 },
+  { "id":"c10", "closer":"Juan Díaz", "ts":"2024-12-18T12:00:00-05:00", "lead":"Fernando P.", "phone":"+57•••7722", "durationSec": 180, "outcome":"No contesta", "result":"—", "notes":"Reintento mañana", "amount": 0 }
+]

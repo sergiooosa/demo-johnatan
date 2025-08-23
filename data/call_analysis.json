@@ -1,0 +1,55 @@
+[
+  {
+    "id": "ca_001",
+    "leadName": "Carlos Pérez",
+    "phone": "+57 300 123 4567",
+    "closer": "Juan Díaz",
+    "objetivo": "Cierre",
+    "resultado": "Venta",
+    "objecciones": ["precio"],
+    "sentimiento": "Positivo",
+    "resumen": "El lead venía precalificado, repasamos beneficios y cerró plan anual.",
+    "acciones": ["Enviar factura", "Agendar onboarding"],
+    "cita": "2025-08-24 10:00",
+    "transcripcion": [
+      "Lead: Tengo dudas sobre el proceso de pago.",
+      "Closer: Te explico los pasos y garantías.",
+      "Lead: Perfecto, voy a proceder."
+    ]
+  },
+  {
+    "id": "ca_002",
+    "leadName": "María González",
+    "phone": "+57 301 987 6543",
+    "closer": "Juan Díaz",
+    "objetivo": "Demo",
+    "resultado": "Oferta enviada",
+    "objecciones": ["tiempo", "confianza"],
+    "sentimiento": "Neutro",
+    "resumen": "Mostré la plataforma, preguntó por casos de éxito. Interesada pero quiere consultar.",
+    "acciones": ["Enviar propuesta", "Seguimiento en 48h"],
+    "cita": "2025-08-26 15:00",
+    "transcripcion": [
+      "Lead: ¿Tienen casos similares a mi industria?",
+      "Closer: Sí, te comparto algunos ejemplos...",
+      "Lead: Me parece interesante, lo voy a evaluar."
+    ]
+  },
+  {
+    "id": "ca_003",
+    "leadName": "Luis Martínez",
+    "phone": "+57 302 555 1234",
+    "closer": "Ana Pérez",
+    "objetivo": "Seguimiento",
+    "resultado": "Perdida",
+    "objecciones": ["precio", "presupuesto"],
+    "sentimiento": "Negativo",
+    "resumen": "No tiene presupuesto aprobado para este año. Prefiere solución más básica.",
+    "acciones": ["Marcar para re-contacto Q1 2026"],
+    "transcripcion": [
+      "Lead: El precio está fuera de mi rango.",
+      "Closer: ¿Qué opciones te funcionarían mejor?",
+      "Lead: Necesito algo más económico por ahora."
+    ]
+  }
+]

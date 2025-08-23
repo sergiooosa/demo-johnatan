@@ -1,0 +1,67 @@
+[
+  { 
+    "adId":"TT-01",
+    "adName":"TT Lead Gen A",
+    "medium":"TikTok Ads",
+    "spend":1200,
+    "agendas":85,
+    "agendasQ":70,
+    "showsQ":58,
+    "sales":14,
+    "cash":3800,
+    "campaigns":[
+      {"name":"H1","roas":3.2},
+      {"name":"H2","roas":3.0},
+      {"name":"H3","roas":2.8}
+    ]
+  },
+  { 
+    "adId":"TT-02",
+    "adName":"TT Lead Gen B",
+    "medium":"TikTok Ads",
+    "spend":1650,
+    "agendas":95,
+    "agendasQ":78,
+    "showsQ":62,
+    "sales":16,
+    "cash":4100,
+    "campaigns":[
+      {"name":"H1","roas":2.8},
+      {"name":"H2","roas":2.6},
+      {"name":"H3","roas":2.4}
+    ]
+  },
+  { 
+    "adId":"FB-01",
+    "adName":"Meta Carousel A",
+    "medium":"Meta Ads",
+    "spend":2100,
+    "agendas":120,
+    "agendasQ":95,
+    "showsQ":76,
+    "sales":26,
+    "cash":7200,
+    "campaigns":[
+      {"name":"H1","spend":600,"agendasQ":28,"showsQ":22,"sales":8,"cash":2200,"roas":3.7},
+      {"name":"H2","spend":550,"agendasQ":26,"showsQ":20,"sales":7,"cash":1900,"roas":3.5},
+      {"name":"H3","spend":500,"agendasQ":22,"showsQ":18,"sales":6,"cash":1600,"roas":3.2},
+      {"name":"H4","spend":450,"agendasQ":19,"showsQ":16,"sales":5,"cash":1500,"roas":3.3}
+    ]
+  },
+  { 
+    "adId":"GG-01",
+    "adName":"Google Search A",
+    "medium":"Google Ads",
+    "spend":1800,
+    "agendas":100,
+    "agendasQ":85,
+    "showsQ":72,
+    "sales":20,
+    "cash":5600,
+    "campaigns":[
+      {"name":"H1","roas":3.3},
+      {"name":"H2","roas":3.1},
+      {"name":"H3","roas":2.9}
+    ]
+  }
+] 

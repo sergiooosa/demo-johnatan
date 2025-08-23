@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg0: #070C1A;
+  --bg1: #0B1224;
+  --surface: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.10);
+  --tx1: #E6ECFF;
+  --tx2: #9DA9C0;
+}
+
+html, body {
+  background:
+    radial-gradient(800px 600px at 20% 10%, rgba(66,133,244,.08), transparent 60%),
+    radial-gradient(700px 500px at 80% 0%, rgba(254,44,85,.06), transparent 60%),
+    linear-gradient(180deg, #070C1A 0%, #0B1224 100%);
+  color: #E6ECFF;
+  min-height: 100vh;
+}
+
+/* Glass effect */
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+}
+
+/* Glow effect for cards */
+.glow {
+  position: relative;
+}
+.glow::after {
+  content: "";
+  position: absolute; 
+  inset: -1px;
+  border-radius: inherit;
+  background: radial-gradient(60% 60% at 50% 10%, rgba(255,255,255,.18), transparent 60%);
+  opacity: 0; 
+  transition: opacity .25s ease;
+  pointer-events: none;
+}
+.glow:hover::after { 
+  opacity: .35; 
+}
+
+/* Card accent border with gradient */
+.card-accent {
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background-clip: padding-box;
+  position: relative;
+}
+.card-accent::before {
+  content: "";
+  position: absolute; 
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px; /* grosor del borde */
+  background: linear-gradient(135deg, rgba(66,133,244,.6), rgba(254,44,85,.6), rgba(24,119,242,.6));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: opacity .25s ease;
+}
+.card-accent:hover::before {
+  background: linear-gradient(135deg, rgba(66,133,244,.8), rgba(254,44,85,.8), rgba(24,119,242,.8));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+} 
