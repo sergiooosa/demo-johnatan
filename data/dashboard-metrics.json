@@ -1,0 +1,24 @@
+{
+  "inversionAnuncios": 125000,
+  "impresiones": 2500000,
+  "ctr": 3.2,
+  "leadsGenerados": 850,
+  "leadsCalificados": 420,
+  "reunionesConcretadas": 180,
+  "clientesMitigados": 76,
+  "costoPorCliente": 1644.74,
+  "facturacion": 495500,
+  "roas": 3.96,
+  "variaciones": {
+    "inversionAnuncios": "+12.5%",
+    "impresiones": "+8.3%",
+    "ctr": "-0.2%",
+    "leadsGenerados": "+15.7%",
+    "leadsCalificados": "+22.1%",
+    "reunionesConcretadas": "+18.9%",
+    "clientesMitigados": "+25.3%",
+    "costoPorCliente": "-8.7%",
+    "facturacion": "+31.2%",
+    "roas": "+19.4%"
+  }
+}

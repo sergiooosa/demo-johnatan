@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "nombre": "Miami",
+    "inversionPublicidad": 35000,
+    "leadsDistribuidos": 280,
+    "leadsCalificados": 140,
+    "citasConcretadas": 60,
+    "clientesMitigados": 21,
+    "costosOficina": 8500,
+    "vendedores": [
+      {
+        "id": 1,
+        "nombre": "Carlos Rodriguez - Agente Senior",
+        "leadsAsignados": 95,
+        "citasRealizadas": 22,
+        "clientesMitigados": 8,
+        "ventasRealizadas": 8,
+        "tasaConversion": 8.4
+      },
+      {
+        "id": 2,
+        "nombre": "Maria Gonzalez - Especialista Condos",
+        "leadsAsignados": 90,
+        "citasRealizadas": 20,
+        "clientesMitigados": 7,
+        "ventasRealizadas": 7,
+        "tasaConversion": 7.8
+      },
+      {
+        "id": 3,
+        "nombre": "Luis Martinez - Agente Residencial",
+        "leadsAsignados": 95,
+        "citasRealizadas": 18,
+        "clientesMitigados": 6,
+        "ventasRealizadas": 6,
+        "tasaConversion": 6.3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Orlando",
+    "inversionPublicidad": 28000,
+    "leadsDistribuidos": 220,
+    "leadsCalificados": 110,
+    "citasConcretadas": 48,
+    "clientesMitigados": 15,
+    "costosOficina": 7200,
+    "vendedores": [
+      {
+        "id": 4,
+        "nombre": "Ana Silva",
+        "leadsAsignados": 75,
+        "citasRealizadas": 18,
+        "clientesMitigados": 6,
+        "ventasRealizadas": 6,
+        "tasaConversion": 8.0
+      },
+      {
+        "id": 5,
+        "nombre": "Roberto Diaz",
+        "leadsAsignados": 70,
+        "citasRealizadas": 16,
+        "clientesMitigados": 5,
+        "ventasRealizadas": 5,
+        "tasaConversion": 7.1
+      },
+      {
+        "id": 6,
+        "nombre": "Carmen Lopez",
+        "leadsAsignados": 75,
+        "citasRealizadas": 14,
+        "clientesMitigados": 4,
+        "ventasRealizadas": 4,
+        "tasaConversion": 5.3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Tampa",
+    "inversionPublicidad": 25000,
+    "leadsDistribuidos": 200,
+    "leadsCalificados": 100,
+    "citasConcretadas": 42,
+    "clientesMitigados": 13,
+    "costosOficina": 6800,
+    "vendedores": [
+      {
+        "id": 7,
+        "nombre": "Jose Fernandez",
+        "leadsAsignados": 70,
+        "citasRealizadas": 16,
+        "clientesMitigados": 5,
+        "ventasRealizadas": 5,
+        "tasaConversion": 7.1
+      },
+      {
+        "id": 8,
+        "nombre": "Isabel Torres",
+        "leadsAsignados": 65,
+        "citasRealizadas": 14,
+        "clientesMitigados": 4,
+        "ventasRealizadas": 4,
+        "tasaConversion": 6.2
+      },
+      {
+        "id": 9,
+        "nombre": "Miguel Ruiz",
+        "leadsAsignados": 65,
+        "citasRealizadas": 12,
+        "clientesMitigados": 4,
+        "ventasRealizadas": 4,
+        "tasaConversion": 6.2
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Jacksonville",
+    "inversionPublicidad": 22000,
+    "leadsDistribuidos": 180,
+    "leadsCalificados": 90,
+    "citasConcretadas": 38,
+    "clientesMitigados": 11,
+    "costosOficina": 6200,
+    "vendedores": [
+      {
+        "id": 10,
+        "nombre": "Patricia Morales",
+        "leadsAsignados": 60,
+        "citasRealizadas": 14,
+        "clientesMitigados": 4,
+        "ventasRealizadas": 4,
+        "tasaConversion": 6.7
+      },
+      {
+        "id": 11,
+        "nombre": "Antonio Vega",
+        "leadsAsignados": 60,
+        "citasRealizadas": 12,
+        "clientesMitigados": 3,
+        "ventasRealizadas": 3,
+        "tasaConversion": 5.0
+      },
+      {
+        "id": 12,
+        "nombre": "Rosa Herrera",
+        "leadsAsignados": 60,
+        "citasRealizadas": 12,
+        "clientesMitigados": 4,
+        "ventasRealizadas": 4,
+        "tasaConversion": 6.7
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Atlanta",
+    "inversionPublicidad": 30000,
+    "leadsDistribuidos": 240,
+    "leadsCalificados": 120,
+    "citasConcretadas": 52,
+    "clientesMitigados": 16,
+    "costosOficina": 7800,
+    "vendedores": [
+      {
+        "id": 13,
+        "nombre": "David Kim",
+        "leadsAsignados": 80,
+        "citasRealizadas": 18,
+        "clientesMitigados": 6,
+        "ventasRealizadas": 6,
+        "tasaConversion": 7.5
+      },
+      {
+        "id": 14,
+        "nombre": "Sofia Chen",
+        "leadsAsignados": 80,
+        "citasRealizadas": 17,
+        "clientesMitigados": 5,
+        "ventasRealizadas": 5,
+        "tasaConversion": 6.3
+      },
+      {
+        "id": 15,
+        "nombre": "Eduardo Santos",
+        "leadsAsignados": 80,
+        "citasRealizadas": 17,
+        "clientesMitigados": 5,
+        "ventasRealizadas": 5,
+        "tasaConversion": 6.3
+      }
+    ]
+  }
+]

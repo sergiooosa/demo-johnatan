@@ -3,21 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --bg0: #070C1A;
-  --bg1: #0B1224;
-  --surface: rgba(255,255,255,0.04);
-  --border: rgba(255,255,255,0.10);
-  --tx1: #E6ECFF;
-  --tx2: #9DA9C0;
+  --bg0: #0F0F23;
+  --bg1: #1A1A2E;
+  --surface: rgba(255,255,255,0.05);
+  --border: rgba(255,255,255,0.15);
+  --tx1: #FFFFFF;
+  --tx2: #B8BCC8;
 }
 
 html, body {
-  background:
-    radial-gradient(800px 600px at 20% 10%, rgba(66,133,244,.08), transparent 60%),
-    radial-gradient(700px 500px at 80% 0%, rgba(254,44,85,.06), transparent 60%),
-    linear-gradient(180deg, #070C1A 0%, #0B1224 100%);
-  color: #E6ECFF;
+  background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #312E81 100%);
+  color: #FFFFFF;
   min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Glass effect */
@@ -85,4 +83,59 @@ html, body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
+}
+
+/* Animaciones personalizadas */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(139, 92, 246, 0.6); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Efectos de hover mejorados */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Animación para contenido expandible */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Efectos para tarjetas expandibles */
+.expandable-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.expandable-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.3);
 } 
